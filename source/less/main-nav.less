@@ -1,5 +1,9 @@
 .main-nav {
   //color: white;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .main-nav__link {
@@ -10,6 +14,10 @@
 .main-nav__list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 
 .main-nav__button {
@@ -45,4 +53,13 @@
 
 .main-nav__button::after {
   bottom: 0;
+}
+
+.main-nav__link {
+  width: 14px;
+  height: 14px;
+  font-size: 0;
+  display: block;
+  background-color: white;
+  opacity: 0.5;
 }
