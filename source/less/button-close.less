@@ -1,0 +1,36 @@
+.button-close {
+  background-color: transparent;
+  border: none;
+  //width: 15px;
+  //height: 15px;
+  position: relative;
+  //border: 1px solid red;
+}
+
+.button-close::before,
+.button-close::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 14px;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.button-close::before {
+  transform: rotate(135deg);
+}
+
+.button-close::after {
+  transform: rotate(45deg);
+}
+
+.button-close:hover::before,
+.button-close:hover::after {
+  background-color: #8f8f9b;
+}
