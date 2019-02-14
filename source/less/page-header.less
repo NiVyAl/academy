@@ -2,8 +2,12 @@
   background-color: #302a81;
   width: 100%;
   display: block;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 80px;
+}
+
+.page-header__wrapper {
+  padding: 0 10px;
 }
 
 .page-header__top {
@@ -12,14 +16,14 @@
   align-items: center;
 }
 
-.page-header__logo {
-  //outline: 1px solid red;
+.page-header__logo:hover {
+  opacity: 0.5;
 }
 
 .page-header__logo img {
   display: block;
+  width: 80px;
 }
-
 
 .page-header__content {
   padding-top: 160px;
@@ -31,4 +35,21 @@
 
 .page-header__title {
   color: white;
+}
+
+@media (min-width: 425px) {
+  .page-header__wrapper {
+    padding: 0 20px;
+  }
+  
+  .page-header__logo img {
+    width: 100px;   
+  }
+  
+}
+
+@media (min-width: 770px) {
+  .page-header__logo {
+    display: none;
+  }
 }

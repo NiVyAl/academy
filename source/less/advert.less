@@ -1,7 +1,12 @@
 .advert {
   background-color: #643eb4;
-  padding: 10px 0;
+  //padding: 10px 0;
   color: white;
+}
+
+.advert__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .advert__title {
@@ -42,15 +47,9 @@
   transform: rotate(-10deg);
 }
 
-.advert__wrapper {
-  display: flex;
-  justify-content: space-between;
-  //width: 350px;
-}
-
 .advert__button {
   //flex-grow: 1;
-  width: 50px;
+  width: 40px;
 }
 
 .advert__button::before,
@@ -62,5 +61,7 @@
 .advert__link {
   color: inherit;
   text-decoration: none;
-  padding-left: 10px;
+  padding: 10px 0;
+  padding-right: 0;
+  flex-grow: 1;
 }
