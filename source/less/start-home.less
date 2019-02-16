@@ -1,0 +1,51 @@
+.start-home {
+  padding-top: 160px;
+  text-align: center;
+  background-image: url("img/header-img.png");
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+.start-home__title {
+  color: white;
+}
+
+.start-home__logo {
+  display: none;
+} 
+
+@media (min-width: 770px) {
+  .start-home {
+    padding-top: 100px;
+    background-image: none;
+    display: flex;
+    text-align: left;
+  }
+  
+  .start-home__logo {
+    display: block;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+  
+  .start-home__logo img {
+    max-width: 100%;
+  }
+  
+  .start-home__message {
+    //flex-grow: 1;
+    flex-basis: 50%;
+  }
+  
+  .start-home__button {
+    text-align: center;
+  }
+  
+  .start-home__title {
+    font-size: 30px;  
+    margin-top: 0;
+  }
+  
+  
+}

@@ -21,6 +21,10 @@
   margin: 0;
 }
 
+.main-nav__list--account  {
+  display: none;
+}
+
 .main-nav__button {
   width: 30px;
   height: 23px;
@@ -116,7 +120,35 @@
 }
 
 @media (min-width: 770px) {
+  .main-nav {
+    justify-content: space-between;
+  }
+  
   .main-nav__button {
     display: none;
+  }
+  
+  .main-nav__list {
+    flex-grow: 0;
+  }
+  
+  .main-nav__list--account {
+    display: flex;
+  }
+  
+  .main-nav__list--main .main-nav__link {
+    justify-content: flex-start;
+  }
+  
+  .main-nav__list--account .main-nav__link {
+    justify-content: flex-end;
+  }
+  
+  .main-nav__list--main .main-nav__item {
+    margin-right: 20px;
+  }
+  
+  .main-nav__list--account .main-nav__item {
+    margin-left: 20px;
   }
 }
