@@ -46,11 +46,14 @@
     <section class="advert">
       <div class="wrapper advert__wrapper">
         <a class="advert__link" href="#">
-          <h3 class="advert__title">Профессиональный PHP, уровень 1</h3>
-          <p class="advert__text">с 9 апреля по 10июня 2019</p>
-          <p class="advert__text">До 19 февраля цена <span class="advert__price">14000 &#8381;</span><span class="advert__last-price">16500 &#8381;</span></p>
+          <span class="advert__title-container">
+            <h3 class="advert__title">Профессиональный PHP, уровень 1</h3>
+            <p class="advert__text">с 9 апреля по 10июня 2019</p>
+          </span>
+          
+          <p class="advert__text advert__text--new-line">До 19 февраля цена <span class="advert__price">14000 &#8381;</span><span class="advert__last-price">16500 &#8381;</span></p>
         </a>
-        <button class="advert__button button-close"></button>
+        <button class="advert__button button-close" onclick="advertClose()"></button>
       </div>
     </section>
     
@@ -94,5 +97,66 @@
         </ul>
       </div>
     </div>
+    
+    <div class="statistics">
+      <div class="wrapper wrapper__statistics">
+         <ul class="statistics__list">
+          <li class="statistics__item statistics__item--crown">
+            <p class="statistics__number">1 206</p>
+            <p class="statistics__text">Заданий и испытаний</p>
+          </li>
+          
+          <li class="statistics__item statistics__item--raccon">
+            <p class="statistics__number">591 634</p>
+            <p class="statistics__text">Пользователя</p>
+          </li>
+          
+          <li class="statistics__item statistics__item--thumb">
+            <p class="statistics__number">56 921 554</p>
+            <p class="statistics__text">Задания выполнено</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="comments">
+      <div class="wrapper comments__wrapper">
+        <ul class="comments__list">
+          <li class="comments__item">
+            <img src="img/38472@1x.webp" width="60" class="comments__avatav"> <!-- добавь jpeg! -->
+            <div class="comments__text">
+              <p class="comments__quote">
+                Всё начинается с сущей шалости. «Я только попробую», — говоришь ты. А утром обнаруживаешь себя за компьютером и не можешь ответить, как долго просидел за ним, проходя онлайн‑курсы один за другим. Именно в этот момент всё выходит из-под контроля: базовый интенсив, продвинутый, JavaScript. И вот ты уже меняешь свою работу, жизнь и мечтаешь теперь об одном: стать ниндзя веб-разработки, в арсенале которого HTML, CSS, SVG и JavaScript. Ребятам из HTML Academy удалось невозможное: увлечь за собой многих «скучающих и сомневающихся» и занять их сложным, современным и очень классным делом.
+              </p>
+
+              <cite class="comments__author"><a href="#" class="comments__link"> Ирина Смирнова</a>, фронтенд-разработчик в Bookmate</cite>
+            </div>
+          </li>
+          
+          <li class="comments__item">
+            <img src="img/126100@1x.webp" width="60" class="comments__avatav">
+            <div class="comments__text">
+              <p class="comments__quote">
+                Обучаясь в Академии, вы сэкономите огромное количество времени и научитесь правильно писать код, работать с реальными проектами и очень легко сможете продолжить свою карьеру фронтенд-разработчика самостоятельно. А также работа с наставником даёт большой опыт работы с кодом, потому что он всегда готов помочь в трудную минуту.
+              </p>
+
+              <cite class="comments__author"><a href="#" class="comments__link"> Богдан Васкан</a>, верстальщик в iNTERAD</cite>
+            </div>
+          </li>
+          
+          <li class="comments__item">
+            <img src="img/99239@1x.webp" width="60" class="comments__avatav">
+            <div class="comments__text">
+              <p class="comments__quote">
+                Курсы Академии мне порекомендовали. Всегда скептически относился к вебинарам, но обучение в Академии изменило это представление. Учиться действительно интересно, занимательно, и, самое главное, не скучно. Интенсив Академии просто «вбивает» в голову нужные и современные навыки и знания, которые пригодятся вам в любимом деле.
+              </p>
+
+              <cite class="comments__author"><a href="#" class="comments__link"> Павел Цыганов</a>, преподаватель</cite>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,74 @@
+.comments {
+  background-color: white;
+  padding: 40px 0;
+}
+
+.comments__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comments__author {
+  font-style: normal;
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+
+.comments__author::before {
+  content: "\2014 \00A0";
+  position: absolute;
+  //display: block;
+  top: 0;
+  left: 0;
+}
+
+
+.comments__avatav {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.comments__quote {
+  line-height: 20px;
+  margin-left: 0;
+}
+
+.comments__item {
+  margin-bottom: 70px;
+}
+
+.comments__link {
+  color: #302a81;
+  text-decoration: none;
+}
+
+.comments__link:hover {
+  text-decoration: underline;
+}
+
+.comments__wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@media (min-width: 770px) {
+  .comments__wrapper {
+    max-width: 570px;  
+  }
+  
+  .comments__item {
+    display: flex;
+  }
+  
+  .comments__quote {
+    margin-top: 0;
+  }
+  
+  .comments__text {
+    padding-left: 20px;
+  }
+}
