@@ -35,3 +35,67 @@
   justify-content: space-around;
   padding: 30px 0;
 }
+
+.page-footer__navigation {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-footer__navigation {
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-between;
+}
+
+.page-footer__item {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.page-footer__text {
+  color: white;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-footer__links {
+  margin-top: 50px;
+}
+
+.page-footer__link {
+  font-size: 15px;
+  display: block;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-footer__link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.page-footer__way-of-love {
+  flex-basis: 50%;
+  display: block;
+}
+
+.page-footer__way-of-love img{
+  display: block;
+}
+
+.page-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  //align-items: center;
+}
+
+.page-footer__text--copyright {
+  margin-top: 0;
+}
+
+@media (min-width: 520px) {
+  .page-footer__item {
+    flex-basis: 25%;    
+  }
+}
