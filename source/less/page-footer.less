@@ -42,12 +42,20 @@
 .page-footer__navigation {
   display: flex;
   flex-wrap: wrap;
+  //width: 100%;
   //justify-content: space-between;
 }
 
 .page-footer__item {
-  flex-basis: 50%;
+  //flex-basis: 50%;
+  width: 50%;
+  box-sizing: border-box;
+  //word-wrap: break-word;
   margin-bottom: 20px;
+}
+
+.page-footer__item:nth-child(2n) {
+  padding-left: 20px;
 }
 
 .page-footer__text {
@@ -70,6 +78,16 @@
 .page-footer__link:hover {
   color: white;
   text-decoration: underline;
+}
+
+.page-footer__link--header {
+  color: white;
+  font-size: 16px;
+}
+
+.page-footer__link--header:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 
 .page-footer__way-of-love {
@@ -95,7 +113,13 @@
 
 @media (min-width: 520px) {
   .page-footer__item {
-    flex-basis: 25%;
+    //flex-basis: 25%;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  .page-footer__item:first-child {
+    padding-left: 0;
   }
   
   .page-footer__navigation {
@@ -117,11 +141,12 @@
     justify-content: space-between;
     flex-grow: 1;
     margin-top: 0;
+    flex-basis: 75%;
   }
   
   .page-footer__item {
     //margin-right: 20px;
-    flex-basis: auto;
+    //flex-basis: auto;
   }
   
   .page-footer__item:last-child {
