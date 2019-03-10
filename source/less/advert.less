@@ -79,12 +79,7 @@
   
   .advert__link {
     display: flex;
-    padding-left: 140px;
-    padding-right: 50px;
     justify-content: center;
-    background-image: url("img/advert-background.png");
-    background-repeat: no-repeat;
-    background-position: left center;
   }
   
   .advert__title {
@@ -93,14 +88,19 @@
   
   .advert__title-container {
     margin-right: 40px;
-    display: block;
-    //flex-shrink: 0;
+    padding-left: 140px;
     //flex-grow: 1;
+    display: block;
+    min-width: 300px;
+    background-image: url("img/advert.png");
+    background-position: 60px center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   
   .advert__text {
     margin: 0;
-    //flex-grow: 1;
+    margin-right: 80px;
   }
   
   .advert__price {
