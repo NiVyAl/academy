@@ -1,16 +1,15 @@
-.page-footer {
-  padding-top: 40px;
-}
-
 .page-footer__header {
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 20px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-footer__button {
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .page-footer__button::before,
@@ -193,7 +192,9 @@
   
   .page-footer__link {
     display: inline-block;
-    //margin: 0 10px;
+    margin: 0;
+    font-size: 18px;
+    margin-left: 25px;
   }
   
   .page-footer__links {
@@ -202,5 +203,10 @@
   
   .page-footer__logo { 
     display: block;  
+  }
+  
+  .page-footer__header {
+    justify-content: center;
+    flex-direction: row;
   }
 }
