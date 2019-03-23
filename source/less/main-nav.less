@@ -25,39 +25,16 @@
   display: none;
 }
 
-.main-nav__button {
-  width: 30px;
-  height: 23px;
-  background-color: transparent;
-  border: none;
-  display: block;
-  padding: 0;
-  position: relative;
-}
-
-.main-nav__button span {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  display: block;
-}
-
-.main-nav__button::before,
-.main-nav__button::after {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  content: "";
-  display: block;
+.main-nav__list--account--active {
+  display: flex;
   position: absolute;
-}
-
-.main-nav__button::before {
   top: 0;
+  left: 0;
 }
 
-.main-nav__button::after {
-  bottom: 0;
+.main-nav__list--account .main-nav__item {
+  display: none;
+  border: 1px solid red;
 }
 
 .main-nav__item {
