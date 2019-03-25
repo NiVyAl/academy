@@ -13,32 +13,71 @@
         <div class="page-header__top">
           <a class="page-header__logo logo" href="#" aria-label="На главную HTML Academy"><img src="img/logo.svg"></a>
           <nav class="main-nav">
-            <ul class="main-nav__list main-nav__list--main">
-              <li class="main-nav__item"><a href="#" class="main-nav__link">курсы</a></li>
-              <li class="main-nav__item"><a href="#" class="main-nav__link">профессия</a></li>
-              <li class="main-nav__item"><a href="#" class="main-nav__link">итенсивы</a></li>
+            <ul class="main-nav__list main-nav__list--mobile">
+              <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link main-nav__link--mobile">курсы</a></li>
+              <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link main-nav__link--mobile">профессия</a></li>
+              <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link main-nav__link--mobile">итенсивы</a></li>
             </ul>
             
-            <ul class="main-nav__list main-nav__list--account main-nav__list--account--active menu-hidden__container">
-              <li class="main-nav__hidden menu-hidden">
-                <ul class="menu-hidden__list">
-                  <li class="menu-hidden__item">
-                    <a class="menu-hidden__link main-nav__link">Курсы</a>
-                  </li>
-                  
-                  <li class="menu-hidden__item">
-                    <a class="menu-hidden__link main-nav__link">профессия</a>
-                  </li>
-                  
-                  <li class="menu-hidden__item">
-                    <a class="menu-hidden__link main-nav__link">интенсивы</a>
-                  </li>
-                </ul>
-              </li>
-              
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Регистрация</a></li>
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Войти</a></li>
-            </ul>
+            <div class="main-nav__container">
+             <!-- <li class="main-nav__hidden menu-hidden__container"> -->
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Курсы</a>
+                </li>
+
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">профессия</a>
+                </li>
+
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">интенсивы</a>
+                  <ul class="main-nav__list main-nav__list--sub">
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">HTML и CSS, уровень 1</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">HTML и CSS, уровень 2</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">JavaScript, уровень 1</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">JavaScript, уровень 2</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">JavaScript, уровень 3</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">Node.js, уровень 1</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">PHP, уровень 1</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">Специализация "Битрикс-разработчик"</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+             <!-- </li> -->
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Регистрация</a>
+                </li>
+                
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Войти</a>
+                </li>
+              </ul>
+            </div>
             
             <button class="main-nav__button menu-button" title="открыть меню" onclick="menuOpen()">
               <span></span>
