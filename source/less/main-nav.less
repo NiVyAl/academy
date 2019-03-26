@@ -9,8 +9,6 @@
   color: white;
   text-decoration: none;
   font-size: 18px;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   text-transform: capitalize;
@@ -109,7 +107,7 @@
 }
 
 .main-nav__item {
-  flex-grow: 1;
+  //flex-grow: 1;
   text-transform: capitalize;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
@@ -129,13 +127,10 @@
 }
 
 @media (min-width: 670px) {
-  .main-nav__link {
-    //display: inline-block;
+  .main-nav__link--mobile {
     font-size: 15px;
-    //width: auto;
-    //height: auto;
   }
-  
+  /*
   .main-nav__link::before {
     width: 10px;
     height: 10px;
@@ -143,12 +138,12 @@
     position: relative;
     margin-right: 10px;
     //left: 20%;
-  }
+  } */
 }
 
 @media (min-width: 770px) {
-  .main-nav {
-    justify-content: space-between;
+  .main-nav__link {
+    font-size: 14px;
   }
   
   .main-nav__button {
@@ -156,26 +151,82 @@
   }
   
   .main-nav__list {
-    flex-grow: 0;
-  }
-  
-  .main-nav__list--account {
     display: flex;
-  }
-  
-  .main-nav__list--main .main-nav__link {
+    flex-direction: row;
     justify-content: flex-start;
   }
   
-  .main-nav__list--account .main-nav__link {
+  .main-nav__list--account {
     justify-content: flex-end;
   }
   
-  .main-nav__list--main .main-nav__item {
-    margin-right: 30px;
+  .main-nav__list--mobile {
+    display: none;  
   }
   
-  .main-nav__list--account .main-nav__item {
-    margin-left: 30px;
+  .main-nav__container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 0;
+  }
+  
+  .main-nav__container::before {
+    display: none;
+  }
+  
+  .main-nav__list--sub {
+    display: none;
+  }
+  
+  .main-nav__item {
+    border: none;
+    padding: 0 20px;
+  }
+  
+  .main-nav__item:first-child {
+    padding-left: 0;
+  }
+  
+  .main-nav__item--sub-container:hover {
+    background-color: #1d1866;
+  }
+  
+  .main-nav__link--sub-container::after {
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    content: "";
+    display: block;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+  }
+  
+  .main-nav__item--sub-container:hover .main-nav__list--sub {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding-left: 20px;
+    left: 0;
+    width: 350px;
+    background-color: #1d1866; 
+  }
+  
+  .main-nav__item--sub {
+    padding: 0;
+  }
+  
+  .main-nav__list--account .main-nav__item:last-child{
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 966px) {
+  .main-nav__link {
+    font-size: 16px;
   }
 }
