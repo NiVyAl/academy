@@ -8,6 +8,84 @@
   </head>
   
   <body>
-    <h1 class="visual-hidden">Profile</h1>
+    <header class="page-header page-header--profile">
+      <div class="page-header__wrapper wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo page-header__logo--profile logo" href="index.html" aria-label="На главную HTML Academy"><img src="img/logo.svg"></a>
+          <nav class="main-nav">
+            <ul class="main-nav__list main-nav__list--mobile">
+              <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link main-nav__link--mobile">курсы</a></li>
+              <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link main-nav__link--mobile">профессия</a></li>
+              <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link main-nav__link--mobile">итенсивы</a></li>
+            </ul>
+            
+            <div class="main-nav__container main-nav__container--profile">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Курсы</a>
+                </li>
+
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">профессия</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--sub-container">
+                  <a href="#" class="main-nav__link main-nav__link--sub-container">интенсивы</a>
+                  <ul class="main-nav__list main-nav__list--sub">
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">HTML и CSS, уровень 1</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">HTML и CSS, уровень 2</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">JavaScript, уровень 1</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">JavaScript, уровень 2</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">JavaScript, уровень 3</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">Node.js, уровень 1</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">PHP, уровень 1</a>
+                    </li>
+                    
+                    <li class="main-nav__item main-nav__item--sub">
+                      <a href="#" class="main-nav__link main-nav__link--sub">Специализация "Битрикс-разработчик"</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="main-nav__list main-nav__list--account">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Регистрация</a>
+                </li>
+                
+                <li class="main-nav__item">
+                  <a href="profile.html" class="main-nav__link">Войти</a>
+                </li>
+              </ul>
+            </div>
+            
+            <button class="main-nav__button menu-button" title="открыть меню" onclick="menuOpen()">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <h1 class="visually-hidden">Profile</h1>
+    
+    <script src="scripts/script.js"></script>
   </body>
 </html>

@@ -2,8 +2,13 @@
   background-color: #302a81;
   width: 100%;
   display: block;
-  padding-top: 15px;
+  //padding-top: 15px;
   padding-bottom: 80px;
+}
+
+.page-header--profile {
+  padding-bottom: 0;
+  background-color: transparent;
 }
 
 .page-header__wrapper {
@@ -14,6 +19,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 5px;
 }
 
 .page-header__logo {
@@ -44,8 +50,18 @@
     padding-bottom: 150px;
   }
   
+  .page-header--profile {
+    padding: 0;
+    background-image: none;
+  }
+  
   .page-header__logo {
     display: none;
+  }
+  
+  .page-header__logo--profile {
+    display: block;
+    margin-right: 40px;
   }
   
   .page-header__wrapper {
