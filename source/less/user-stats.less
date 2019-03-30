@@ -1,0 +1,34 @@
+.user-stats {
+  background-color: @blue;
+  list-style: none;
+  padding-left: 0;
+  color: white;
+  //display: flex;
+  justify-content: space-around;
+  padding: 35px;
+  display: none;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.user-stats__item {
+  display: flex;
+  align-items: center;
+}
+
+.user-stats__value {
+  font-size: 30px;
+}
+
+.user-stats__description {
+  font-size: 19px;
+  margin: 0;
+  //margin-left: 15px;
+  margin-left: 10px;
+}
+
+@media (min-width: @desktop) {
+  .user-stats {
+    display: flex;
+  }
+}

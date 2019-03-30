@@ -1,0 +1,45 @@
+.offer {
+  border: 3px solid @orange;
+  padding: 15px;
+  padding-right: 60px;
+  background-image: url("img/rouble.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  display: block;
+  text-decoration: none;
+}
+
+.offer:hover {
+  border-color: @orange-light;
+}
+
+.offer__title {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.offer:hover .offer__title {
+  color: @blue;
+}
+
+.offer__text {
+  font-size: 14px;
+  margin: 0;
+  color: black;
+}
+
+@media (min-width: @tablet) {
+  .offer {
+    padding-right: 80px;
+  }
+  
+  .offer__title {
+    font-size: 20px;
+  }
+  
+  .offer__text {
+    font-size: 15px;
+  }
+}

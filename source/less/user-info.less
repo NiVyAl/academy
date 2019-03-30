@@ -4,16 +4,17 @@
 
 .user-info__about {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .user-info__avatar-container {
-  background-color: #37238b;
+  background-color: @blue;
   width: 100px;
   text-align: center;
 }
 
 .user-info__avatar {
-  //width: 100px;
+  width: 100%;
   display: block;
 }
 
@@ -30,19 +31,59 @@
 .user-info__user-name {
   font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color: @text-gray;
   margin: 0;
+}
+
+.user-info__social-container {
+  display: flex;
 }
 
 .user-info__social {
   width: 25px;
   height: 25px;
-  background-color: gray;
+  background-color: #9696a1;
   display: block;
   border-radius: 50%;
   margin-top: 10px;
+  margin-right: 15px;
 }
 
 .user-info__social:hover {
-  background-color: #37238b;
+  background-color: @blue;
+}
+
+@media (min-width: @desktop) { //временно desktop
+  .user-info__user-name {
+    font-size: 35px;
+  }
+  
+  .user-info__avatar-container {
+    width: 130px;
+  }
+  
+  .user-info__id {
+    padding: 8px 0;  
+  }
+  
+  .user-info__user-name-container {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: @desktop) { 
+  .user-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .user-info__about {
+    flex-grow: 2;
+  }
+  
+  .user-info__offer {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
 }

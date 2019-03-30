@@ -1,5 +1,5 @@
 .page-header {
-  background-color: #302a81;
+  background-color: @blue;
   width: 100%;
   display: block;
   //padding-top: 15px;
@@ -44,7 +44,7 @@
   
 }
 
-@media (min-width: 770px) {
+@media (min-width: @desktop) {
   .page-header {
     background-image: repeating-linear-gradient(150deg,rgba(255,255,255,.06),rgba(255,255,255,.06) 1px,transparent 0,transparent 41px),repeating-linear-gradient(-150deg,rgba(255,255,255,.06),rgba(255,255,255,.06) 1px,transparent 0,transparent 41px);
     padding-bottom: 150px;
