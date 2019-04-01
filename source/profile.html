@@ -84,6 +84,26 @@
         </div>
       </div>
     </header>
+    <h1 class="visually-hidden">Profile</h1>
+    <section class="advert">
+      <div class="wrapper advert__wrapper">
+        <a class="advert__link" href="#">
+          <span class="advert__title-container">
+            <h3 class="advert__title">Профессиональный PHP, уровень 1</h3>
+            <p class="advert__text">с 9 апреля по 10июня 2019</p>
+          </span>
+          
+          <p class="advert__text advert__text--new-line">
+            <span class="advert__text-before">До 19 февраля цена</span>
+            <span class="advert__price">
+              14000 &#8381; 
+              <span class="advert__last-price">16500 &#8381;</span>
+            </span>
+          </p>
+        </a>
+        <button class="advert__button button-close" onclick="advertClose()"></button>
+      </div>
+    </section>
     
     <div class="profile">
       <div class="wrapper profile__wrapper">
@@ -153,10 +173,43 @@
             <p class="user-stats__description">задание</p>
           </li>
         </ul>
+        
+        <div class="destination">
+          <h2 class="destination__title section__title">67 достижений</h2>
+          <div class="destination__container">
+            <ul class="destination__list">
+              <li class="destination__item">
+                <img src="img/destination-1.svg" class="destination__img">
+                <div class="destination__description">
+                  <h3 class="destination__item-title section__title">Декарт</h3>
+                  <p class="destination__item-description">Пройти курс "<a href="#" class="destination__link link">Размеры в SVG</a>"
+                  </p>
+                </div>
+              </li>
+
+              <li class="destination__item">
+                <img src="img/destination-2.svg" class="destination__img">
+                <div class="destination__description">
+                  <h3 class="destination__item-title section__title">Домочадец</h3>
+                  <p class="destination__item-description">Пройти курс "<a href="#" class="destination__link link">Знакомство с событиями</a>"
+                  </p>
+                </div>
+              </li>
+
+              <li class="destination__item">
+                <img src="img/destination-3.svg" class="destination__img">
+                <div class="destination__description">
+                  <h3 class="destination__item-title section__title">Укротитель демонбагов</h3>
+                  <p class="destination__item-description">Победить в "<a href="#" class="destination__link link">новогоднем расследовании </a>"
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <button class="green-button destination__button">Смотреть все достижения</button>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <h1 class="visually-hidden">Profile</h1>
     
     <footer class="page-footer">
       <div class="page-footer__header">
