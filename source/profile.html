@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title class="username"></title>
+    <title>Профиль</title>
     <link href="style.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -175,7 +175,10 @@
         </ul>
         
         <div class="destination">
-          <h2 class="destination__title section__title">67 достижений</h2>
+          <h2 class="section-title section-title--profile">
+            67 достижений
+            <p class="section-title__progress">Ваши достижения видны <a href="#" class="section-title__link link">Скрыть</a></p>   
+          </h2>
           <div class="destination__container">
             <ul class="destination__list">
               <li class="destination__item">
@@ -207,6 +210,21 @@
             </ul>
             <button class="green-button destination__button">Смотреть все достижения</button>
           </div>
+        </div>
+        
+        <div class="certificate">
+          <h2 class="section-title section-title--profile">
+            1 сертификат
+            <p class="section-title__progress">Ваши достижения видны <a href="#" class="section-title__link link">Скрыть</a></p>     
+          </h2>
+          <a href="#" class="certificate__text-container link">
+            <img class="certificate__img" src="img/certificate.jpg">
+            <div class="certificate__description">
+              <strong class="certificate__title">Профессиональный HTML и CSS, уровень 2, поток 15</strong>
+              <p class="certificate__text">Успешно прошел курс и защитил проект</p>
+              <p class="certificate__date">24 сентября - 31 октября 2018</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
